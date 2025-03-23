@@ -1,28 +1,29 @@
 # Vibe_Code_Test
 
-A Zig project developed with Zig 0.14.0-dev.2577+271452d22.
+A simple OpenGL application built with Zig 0.14.0.
 
-## Description
+## Features
 
-This project demonstrates a simple Zig application structure with both a library component (src/root.zig) and an executable (src/main.zig).
+- OpenGL rendering with GLFW through the zglfw wrapper
+- RGB triangle with vertex and fragment shaders
+- FPS counter in console
+
+## Requirements
+
+- Zig 0.14.0 or newer
+- OpenGL 3.3 compatible graphics driver
+- GLFW3 library installed on your system
 
 ## Building and Running
 
-To build and run the project:
-
-```
+```bash
 zig build run
 ```
 
-To run tests:
+## Controls
 
-```
-zig build test
-```
+Close the window with Escape key or by clicking the close button.
 
-## Project Structure
+## License
 
-- `src/main.zig` - The entry point for the executable
-- `src/root.zig` - The library component with exported functions
-- `build.zig` - Build configuration
-- `build.zig.zon` - Package definition
+MIT
